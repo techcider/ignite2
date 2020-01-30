@@ -2,6 +2,15 @@
     margin: 0px;
     padding: 0px;
 }
+body
+{
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000;
+  color: black;
+  font-family: "Anonymous Pro", "Avenir", sans-serif;
+}
 .logo{
     display: block;
     margin: auto;
@@ -43,16 +52,7 @@
  * prefixes.
  */
 
- body
- {
-   margin: 0;
-   padding: 0;
-   overflow: hidden;
-   
-   /* make it look decent enough */
-   color: black;
-   font-family: "Anonymous Pro", "Avenir", sans-serif;
- }
+
  #mid{
      visibility: hidden;
      animation: right_fill 0.2s ease-in 0.9s infinite forwards;
@@ -89,28 +89,7 @@
     }
    
 }
-/*
 
- @keyframes right_fill{
-    0% {
-        visibility: hidden;
-        opacity: 0;
-    }
-    25% {
-        visibility: visible;
-        opacity: 0.5;
-    }
-    50% {
-        opacity: 1;
-    }
-    75% {
-        opacity: 0.5;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-*/
  
  #menuToggle
  {
@@ -127,7 +106,7 @@
  #menuToggle a
  {
    text-decoration: none;
-   color: #232323;
+   color: #fff;
    
    transition: color 0.3s ease;
  }
@@ -166,7 +145,7 @@
    margin-bottom: 5px;
    position: relative;
    
-   background: #000;
+   background: rgb(6, 86, 190);
    border-radius: 3px;
    
    z-index: 1;
@@ -227,11 +206,11 @@
    padding: 50px;
    padding-top: 125px;
    height: 100vh;
-   background: #ededed;
+   color: #000;
+   background: #ffffff;
    list-style-type: none;
    -webkit-font-smoothing: antialiased;
    /* to stop flickering of text in safari */
-   
    transform-origin: 0% 0%;
    transform: translate(-100%, 0);
    
@@ -242,6 +221,7 @@
  {
    padding: 10px 0;
    font-size: 30px;
+   color: black;
  }
  
  /*
